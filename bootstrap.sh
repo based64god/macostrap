@@ -6,6 +6,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+
+# THE FOLLOWING MAY REQUIRE 
+# A BREW TAP FROM SOMEWHERE AROUND THE INTERNET
+# IT IS NOT TESTED
+
+
 # grab standalone binaries
 CASKS=$(cat ./casks.txt)
 brew cask install "${CASKS}"
